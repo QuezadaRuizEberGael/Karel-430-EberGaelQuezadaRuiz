@@ -1,0 +1,13 @@
+class program {
+  void turnright(){
+    iterate(3){
+      turnleft();
+    }
+  }
+    program () {
+        while(notFacingNorth){
+          turnleft();
+        }
+        turnoff();
+    }
+}

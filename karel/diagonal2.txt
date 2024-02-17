@@ -1,0 +1,24 @@
+class program {
+  void tr(){
+    iterate(3){
+      turnleft();
+    }
+  }
+    program () {
+        // TODO poner codigo aqui
+               
+        iterate(7){
+          if(nextToABeeper){
+            pickbeeper();
+          } 
+          move();
+          tr();
+          move();
+          turnleft();
+          if(nextToABeeper){
+            pickbeeper();
+          } 
+        }
+        turnoff();
+    }
+}

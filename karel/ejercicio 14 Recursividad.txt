@@ -1,0 +1,18 @@
+class program {
+  void avanza(x){
+    if(anyBeepersInBeeperBag){
+      putbeeper();
+      avanza(succ(x));
+    }
+    else{
+      iterate(x){
+        move();
+      }
+    }
+  }
+    program () {
+        // TODO poner codigo aqui
+        avanza(0);
+        turnoff();
+    }
+}

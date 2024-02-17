@@ -1,0 +1,21 @@
+class program {
+  define turnright(){
+    turnleft();
+    turnleft();
+    turnleft();
+  }
+    program () {
+        // TODO poner codigo aqui
+        while(notNextToABeeper){
+          putbeeper();
+          if(frontIsBlocked){
+            turnright();
+            move();
+          }
+          else{
+            move();
+          }
+        }
+        turnoff();
+    }
+}

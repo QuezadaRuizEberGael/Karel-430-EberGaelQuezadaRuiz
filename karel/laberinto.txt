@@ -1,0 +1,28 @@
+class program {
+  void turnright(){
+    turnleft();
+    turnleft();
+    turnleft();
+  }
+  void Seguidordepared(){
+    if(rightIsBlocked){
+      if(frontIsClear){
+        move();
+      }
+      else{
+        turnleft();
+      }
+    }
+    else{
+        turnright();
+        move();
+    }
+  }
+    program () {
+        // TODO poner codigo aqui
+        while(notNextToABeeper){
+          Seguidordepared();
+        }
+        turnoff();
+    }
+}

@@ -1,0 +1,32 @@
+class program {
+  void turnright(){
+    iterate(3){
+      turnleft();
+    }
+  }
+    program () {
+        turnright();
+        move();
+        move();
+        turnleft();
+        move();
+        move();
+        turnleft();
+        move();
+        move();
+        turnleft();
+        move();
+        pickbeeper();
+        turnleft();
+        turnleft();
+        move();
+        turnright();
+        move();
+        move();
+        turnright();
+        move();
+        move();
+        putbeeper();
+        turnoff();
+    }
+}

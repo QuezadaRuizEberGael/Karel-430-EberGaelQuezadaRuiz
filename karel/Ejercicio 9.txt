@@ -1,0 +1,28 @@
+class program {
+  void turnright(){
+    iterate(3){
+      turnleft();
+    }
+  }
+  void MVRCC(n) {
+    iterate(n){
+      if(frontIsClear){
+        move();
+      }
+      else{
+        turnleft();
+        move();
+        iterate(2){
+          turnright();
+          move();
+        }
+        turnleft();
+      }
+    }
+  }
+    program () {
+        // TODO poner codigo aqui
+        MVRCC(10);
+        turnoff();
+    }
+}
